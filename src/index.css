@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --color-super-yellow: #FFD93D;
+  --color-super-orange: #FF8400;
+  --color-super-green: #6BCB77;
+  --color-super-pink: #FF9292;
+  --color-super-pastel: #FFF5E4;
+}
+
+body {
+  background-color: var(--color-super-pastel);
+  color: #333;
+  overflow: hidden;
+  user-select: none;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+
+.markdown-body {
+  font-family: "Quicksand", sans-serif;
+}
